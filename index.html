@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To-Do App</title>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.3/dist/sweetalert2.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <section class="container my-4 flex-grow-1">
+        <div
+            class="status-todo bg-light bg-opacity-25 p-3 rounded mb-4 shadow border d-flex align-items-center justify-content-between">
+            <div class="flex-grow-1">
+                <h1 class="h5">Todo App</h1>
+                <span class="small">keep it up! </span>
+
+                <div id="progressBar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+
+            <div class="status-number"><span>0</span> / <span>0</span></div>
+        </div>
+        <h1 class="text-center mb-3 text-white">
+            To-Do App
+        </h1>
+        <form
+            class="d-flex gap-3 flex-column flex-sm-row bg-white p-4 justify-content-between rounded shadow align-items-center">
+            <input type="text" class="form-control p-2" id="exampleFormControlInput1" placeholder="Task to be done...">
+            <button type="submit" class="btn add-task mt-3 mt-sm-0">Add</button>
+        </form>
+        <ul class="bg-white task-container mt-4 p-4 list-unstyled">
+        </ul>
+    </section>
+    <div class="loading d-none">
+        <span class="loader"></span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer py-3 text-center bottom-0 bg-light">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Golden Boy. All rights reserved</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.3/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
