@@ -205,13 +205,15 @@ function hideLoading() {
 async function changeProgress() {
 	const completedTaskNumber = allToDos.filter((todo) => todo.completed).length;
 	const totalTask = allToDos.length;
-  
-	document.getElementById("progress").style.width = `${(completedTaskNumber / totalTask) * 100}%`;
-  
+
+	document.getElementById("progress").style.width = `${
+		(completedTaskNumber / totalTask) * 100
+	}%`;
+
 	const statusNumber = document.querySelectorAll(".status-number span");
 	statusNumber[0].innerHTML = completedTaskNumber;
 	statusNumber[1].innerHTML = totalTask;
-  }
+}
 
 // async function cancelComplete(idTodo) {
 // 	Swal.fire({
